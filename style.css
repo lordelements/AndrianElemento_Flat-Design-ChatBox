@@ -3,21 +3,20 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
 body{
     background: #80edf7;
-    
+    font-family: 'Roboto', sans-serif;
 }
 .chatbox{
     width: 500px;
     min-width: 390px;
-    height: 640px;
+    height: 655px;
     background: #fff;
     padding: 25px;
-    margin: 100px auto;
+    margin: 50px auto;
     box-shadow: 10px 10px 30px rgb(25, 25, 25),
     -10px -10px 30px rgb(60, 60, 60);
     border-radius: 20px;
@@ -120,11 +119,12 @@ body{
         width: 75%;
         height: 50px;
         border: 2px solid #eee;
-        border-radius: 3px;
+        border-radius: 10px;
         resize: none;
         padding: 10px;
         font-size: 18px;
         color: #333;
+        margin-right: 5px;
     }
     .chat-form textarea:focus{
         background: #fff;
@@ -157,20 +157,20 @@ body{
         color:  #fff;
         padding: 0.6em 1em;
         padding-left: 0.9em;
-        margin: 0 10px;
+        margin-right: 0 10px 20px 10px;
         display: flex;
         align-items: center;
         border: none;
-        border-radius: 3px;
+        border-radius: 10px;
         overflow: hidden;
         transition: all 0.2s;
         cursor: pointer;
 
     } .chat-form button span {
-            display: block;
-            margin-left: 0.3em;
-            transition: all 0.3s ease-in-out;
-
+        display: block;
+        margin-left: 0.5em;
+        transition: all 0.3s ease-in-out;
+        
     } .chat-form button svg {
         display: block;
         transform-origin: center center;
@@ -200,9 +200,14 @@ body{
     
 /* CHAT FORM STYLING*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+        width: 100%;
+        font-size: 30px;
+      }
     .chatbox {
       width: 100%;
-      font-size: 80px;
+      font-size: 30px;
     }
   }
